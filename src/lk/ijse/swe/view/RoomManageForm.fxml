@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="roomPageContext" prefHeight="407.0" prefWidth="600.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.swe.controller.RoomManageFormController">
+   <children>
+      <TableView fx:id="tblRoom" layoutX="36.0" layoutY="222.0" prefHeight="170.0" prefWidth="527.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="67.66665649414062" text="Id" />
+          <TableColumn fx:id="colType" prefWidth="114.33334350585938" text="Type" />
+            <TableColumn fx:id="colPrice" prefWidth="90.33331298828125" text="Price" />
+            <TableColumn fx:id="colAvailable" prefWidth="136.66668701171875" text="Availability" />
+            <TableColumn fx:id="colOption" prefWidth="119.3333740234375" text="Option" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="36.0" layoutY="63.0" opacity="0.87" prefHeight="68.0" prefWidth="527.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: white;">
+         <children>
+            <TextField fx:id="txtId" layoutX="21.0" layoutY="22.0" prefHeight="25.0" prefWidth="89.0" promptText="id..." style="-fx-background-radius: 30;" />
+            <TextField fx:id="txtPrice" layoutX="123.0" layoutY="22.0" prefHeight="25.0" prefWidth="117.0" promptText="Price..." style="-fx-background-radius: 30;" />
+            <ComboBox fx:id="cmbType" layoutX="254.0" layoutY="22.0" opacity="0.94" prefHeight="25.0" prefWidth="117.0" promptText="Room Type..." style="-fx-background-radius: 30;" />
+            <ComboBox fx:id="cmbAvailable" layoutX="385.0" layoutY="22.0" opacity="0.94" prefHeight="25.0" prefWidth="117.0" promptText="Availability..." style="-fx-background-radius: 30;" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtSearch" layoutX="37.0" layoutY="179.0" prefHeight="25.0" prefWidth="527.0" promptText="Search..." style="-fx-background-radius: 30;" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="461.0" layoutY="143.0" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="102.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: white;" text="SAVE ROOM" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="568.0" layoutY="14.0" onAction="#btnCloseOnAction" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: red; -fx-background-radius: 500;" text="Button">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="229.0" layoutY="7.0" text="ROOM MANAGE" textFill="#f4f2f2">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="194.0" layoutY="32.0" prefWidth="200.0" />
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="14.0" layoutY="11.0" onAction="#btnBackOnAction" prefHeight="13.0" prefWidth="38.0" style="-fx-background-color: #fbc531; -fx-background-radius: 10;" text="BACK">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="245.0" layoutY="392.0" opacity="0.47" text="Software by Piumika" textFill="#fbfbfb">
+         <font>
+            <Font name="Comic Sans MS Bold" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminContext" prefHeight="360.0" prefWidth="466.0" style="-fx-background-color: #485460;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.swe.controller.AdminFormController">
+   <children>
+      <AnchorPane prefHeight="362.0" prefWidth="203.0" style="-fx-background-color: #1e272e;">
+         <children>
+            <ImageView fitHeight="99.0" fitWidth="108.0" layoutX="52.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Assests/man.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="76.0" layoutY="135.0" text="Admin" textFill="#fbc531">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="23.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Assests/living-room.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="23.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Assests/food-donation.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="12.0" layoutY="11.0" onAction="#btnBackOnAction" prefHeight="13.0" prefWidth="38.0" style="-fx-background-color: #fbc531; -fx-background-radius: 10;" text="BACK">
+               <font>
+                  <Font size="9.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnRoom" layoutX="58.0" layoutY="191.0" onAction="#btnRoomOnAction" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #1e272e; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30;" text="Room Manage" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnMeal" layoutX="57.0" layoutY="239.0" onAction="#btnMealOnAction" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #1e272e; -fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="Meal Manage" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="58.0" layoutY="285.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: white;" text="Reports" textFill="#fdfbfb">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="24.0" fitWidth="38.0" layoutX="23.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Assests/report-3-xxl.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="51.0" layoutY="338.0" opacity="0.47" text="Software by Piumika" textFill="#fbfbfb">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="439.0" layoutY="10.0" onAction="#btnCloseOnAction" prefHeight="13.0" prefWidth="14.0" style="-fx-background-color: red; -fx-background-radius: 50;">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="202.0" orientation="VERTICAL" prefHeight="362.0" prefWidth="8.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Assests/welcome-back.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="317.0" layoutY="229.0" text="Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="250.0" text="Thank you for Supporting us." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

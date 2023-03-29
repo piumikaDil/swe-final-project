@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CustomerContext" prefHeight="407.0" prefWidth="600.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.swe.controller.CustomerFormController">
+   <children>
+      <Label layoutX="216.0" layoutY="1.0" text="CUSTOMER MANAGE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="200.0" layoutY="24.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="576.0" layoutY="9.0" onAction="#btnCloseOnAction" prefHeight="11.0" prefWidth="10.0" style="-fx-background-color: red; -fx-background-radius: 52;">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="15.0" layoutY="62.0" prefHeight="99.0" prefWidth="570.0" style="-fx-background-color: transparent; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30;">
+         <children>
+            <TextField fx:id="txtName" layoutX="98.0" layoutY="14.0" opacity="0.95" prefHeight="25.0" prefWidth="129.0" promptText="NAME" style="-fx-background-radius: 30;" />
+            <TextField fx:id="txtNic" layoutX="243.0" layoutY="14.0" opacity="0.96" prefHeight="25.0" prefWidth="149.0" promptText="NIC" style="-fx-background-radius: 30;" />
+            <TextField fx:id="txtTp" layoutX="401.0" layoutY="14.0" opacity="0.96" prefHeight="25.0" prefWidth="136.0" promptText="TP.NUMBER" style="-fx-background-radius: 30;" />
+            <TextField fx:id="txtEmail" layoutX="14.0" layoutY="58.0" opacity="0.95" prefHeight="25.0" prefWidth="168.0" promptText="EMAIL" style="-fx-background-radius: 30;" />
+            <TextField fx:id="txtAddress" layoutX="201.0" layoutY="58.0" opacity="0.95" prefHeight="25.0" prefWidth="207.0" promptText="ADDRESS" style="-fx-background-radius: 30;" />
+            <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="423.0" layoutY="58.0" onAction="#btnSaveOnAction" prefHeight="27.0" prefWidth="121.0" style="-fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30;" text="SAVE CUSTOMER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <TextField fx:id="txtId" editable="false" layoutX="14.0" layoutY="14.0" opacity="0.95" prefHeight="25.0" prefWidth="78.0" promptText="ID" style="-fx-background-radius: 30;" />
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="txtSearch" layoutX="15.0" layoutY="171.0" opacity="0.98" prefHeight="25.0" prefWidth="570.0" promptText="Search..." style="-fx-background-color: white; -fx-background-radius: 30;" />
+      <TableView fx:id="tblCustomer" layoutX="15.0" layoutY="213.0" prefHeight="173.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="60.33331298828125" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="115.0" text="Name" />
+            <TableColumn fx:id="colNic" prefWidth="93.0" text="NIC" />
+            <TableColumn fx:id="colTp" prefWidth="84.66668701171875" text="TP" />
+            <TableColumn fx:id="colEmail" prefWidth="101.66668701171875" text="Email" />
+            <TableColumn fx:id="colAddress" minWidth="8.3333740234375" prefWidth="115.33331298828125" text="Address" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="14.0" layoutY="11.0" onAction="#btnBackOnAction" prefHeight="13.0" prefWidth="38.0" style="-fx-background-color: #fbc531; -fx-background-radius: 10;" text="BACK">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="245.0" layoutY="386.0" opacity="0.47" text="Software by Piumika" textFill="#fbfbfb">
+         <font>
+            <Font name="Comic Sans MS Bold" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
